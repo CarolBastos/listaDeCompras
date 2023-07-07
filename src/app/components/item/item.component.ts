@@ -35,11 +35,8 @@ export class ItemComponent implements OnInit, OnChanges {
   }
 
   deletarItem() {
-    console.log('deletarItem----');
     this.emitindoIdParaDeletar.emit(this.item.id);
   }
 
-  ngOnDestroy() {
-    console.log('ngOnDestroy-----');
-  }
+  ngOnDestroy() {}
 }

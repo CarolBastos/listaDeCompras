@@ -43,7 +43,6 @@ export class InputComponent implements OnInit, OnChanges {
   }
 
   ngOnChanges(changes: SimpleChanges): void {
-    console.log(changes['itemQueVaiSerEditado'].currentValue);
     if (!changes['itemQueVaiSerEditado'].firstChange) {
       this.editando = true;
       this.textoBtn = 'Editar item';
